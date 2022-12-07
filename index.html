@@ -29,7 +29,7 @@
 
           <ul class="header--nav-list">
             <li class="header--nav-list-link">
-              <a class="header--nav-link header--nav-link-current" href="./index.html" class="header--link"> Студія </a>
+              <a class="header--nav-link current" href="./index.html" class="header--link"> Студія </a>
             </li>
             <li class="header--nav-list-link">
               <a class="header--nav-link " href="./portfolio.html" class="header--link">
@@ -73,17 +73,7 @@
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 
-          <button data-modal-open class="hero-button" type="button">Замовити послугу</button>
-
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <p>
-                lorem ipsum 
-              </p>
-              <button data-modal-close class="modal-close-button" type="button">Закрыть</button>
-            </div>
-
-          </div>
+          <button class="hero-button" data-modal-open type="button">Замовити послугу</button>
 
         </div>
       </section>
@@ -586,6 +576,17 @@
         </div>
       </div>
     </footer>
+    
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="btn-modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href=".images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
